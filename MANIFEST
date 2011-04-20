@@ -14,6 +14,7 @@ t/00-load.t
 t/000-report-versions.t
 t/001-tied.pm
 t/002-tied-ixhash.t
+t/003-ixhash-and-native-trait.t
 t/release-consistent-version.t
 t/release-eol.t
 t/release-has-version.t

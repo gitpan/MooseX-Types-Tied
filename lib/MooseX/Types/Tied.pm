@@ -12,7 +12,7 @@ BEGIN {
   $MooseX::Types::Tied::AUTHORITY = 'cpan:RSRCHBOY';
 }
 BEGIN {
-  $MooseX::Types::Tied::VERSION = '0.001';
+  $MooseX::Types::Tied::VERSION = '0.002';
 }
 
 # ABSTRACT: Basic tied Moose types library
@@ -61,7 +61,7 @@ MooseX::Types::Tied - Basic tied Moose types library
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

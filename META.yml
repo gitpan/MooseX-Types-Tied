@@ -31,8 +31,9 @@ requires:
   perl: 5.006
 resources:
   bugtracker: https://github.com/RsrchBoy/moosex-types-tied/issues
+  homepage: http://search.cpan.org/dist/MooseX-Types-Tied/
   repository: git://github.com/RsrchBoy/moosex-types-tied.git
-version: 0.001
+version: 0.002
 x_Dist_Zilla:
   plugins:
     -

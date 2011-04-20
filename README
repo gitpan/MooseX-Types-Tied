@@ -2,7 +2,7 @@ NAME
     MooseX::Types::Tied - Basic tied Moose types library
 
 VERSION
-    version 0.001
+    version 0.002
 
 SYNOPSIS
         use Moose;

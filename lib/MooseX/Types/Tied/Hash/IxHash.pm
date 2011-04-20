@@ -12,7 +12,7 @@ BEGIN {
   $MooseX::Types::Tied::Hash::IxHash::AUTHORITY = 'cpan:RSRCHBOY';
 }
 BEGIN {
-  $MooseX::Types::Tied::Hash::IxHash::VERSION = '0.001';
+  $MooseX::Types::Tied::Hash::IxHash::VERSION = '0.002';
 }
 
 # ABSTRACT: Moose type library for Tie::IxHash tied hashes
@@ -36,9 +36,9 @@ subtype IxHash,
 
 coerce IxHash,
     from HashRef,
-    via { tie my $x, 'Tie::IxHash', %{$_}; $x },
+    via { tie my %x, 'Tie::IxHash', %{$_}; \%x },
     from ArrayRef,
-    via { tie my $x, 'Tie::IxHash', @{$_}; $x },
+    via { tie my %x, 'Tie::IxHash', @{$_}; \%x },
     ;
 
 1;
@@ -53,7 +53,7 @@ MooseX::Types::Tied::Hash::IxHash - Moose type library for Tie::IxHash tied hash
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
