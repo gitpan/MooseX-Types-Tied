@@ -1,4 +1,4 @@
-#!perl
+#!/usr/bin/env perl
 
 BEGIN {
   unless ($ENV{RELEASE_TESTING}) {
@@ -17,9 +17,15 @@ BEGIN {
 #   The GNU Lesser General Public License, Version 2.1, February 1999
 #
 
-use Test::More;
+use strict;
+use warnings;
 
-eval 'use Test::Portability::Files';
-plan skip_all => 'Test::Portability::Files required for testing portability'
+use Test::More 0.88;
+
+eval "use Test::NoSmartComments";
+plan skip_all => 'Test::NoSmartComments required for checking comment IQ'
     if $@;
-run_tests();
+
+no_smart_comments_in_all();
+
+done_testing();

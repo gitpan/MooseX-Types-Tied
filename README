@@ -2,7 +2,8 @@ NAME
     MooseX::Types::Tied - Basic tied Moose types library
 
 VERSION
-    version 0.002
+    This document describes version 0.003 of MooseX::Types::Tied - released
+    April 21, 2012 as part of MooseX-Types-Tied.
 
 SYNOPSIS
         use Moose;
@@ -20,16 +21,28 @@ DESCRIPTION
 
 TYPES
   Tied
-    Basetype: Ref (to Scalar)
+    Base type: Ref (to Scalar)
 
   TiedArray
-    Basetype: ArrayRef
+    Base type: ArrayRef
 
   TiedHash
-    Basetype: HashRef
+    Base type: HashRef
 
   TiedHandle
-    Basetype: FileHandle
+    Base type: FileHandle
+
+SOURCE
+    The development version is on github at
+    <http://github.com/RsrchBoy/moosex-types-tied> and may be cloned from
+    <git://github.com/RsrchBoy/moosex-types-tied.git>
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    https://github.com/RsrchBoy/moosex-types-tied/issues
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
 
 AUTHOR
     Chris Weyl <cweyl@alumni.drew.edu>
